@@ -1,7 +1,8 @@
 import React from "react";
-import "../assets/css/Auth.css"; 
 import { useState } from "react";
+import "../assets/css/Auth.css"; 
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Link } from "react-router-dom";
 
 function Register() {
     const [step,setStep] = useState(1);
@@ -109,7 +110,7 @@ function Register() {
 
         <div className="login-footer">
             <p>
-            Already have an account ? <a href="/"> Login</a>
+            Already have an account ? <Link to={'/login'} replace> Login</Link>
             </p>
         </div>
 

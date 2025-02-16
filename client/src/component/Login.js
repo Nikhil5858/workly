@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/Auth.css"; 
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Login() {
   return (
@@ -25,7 +25,7 @@ function Login() {
 
             <div className="login-footer">
               <p>
-                Don't have an account ? <a href="/"> Create an Account</a>
+                Don't have an account ? <Link to={'register'}> Create an Account</Link>
               </p>
             </div>
         

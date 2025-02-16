@@ -20,6 +20,8 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 8px rgba(110, 108, 108, 0.2);
+    /* max-width: 500px;
+    width: 100%; */
     width: 500px;
     text-align: center;
   }
