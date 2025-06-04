@@ -8,6 +8,19 @@ const userSchema = new mongoose.Schema({
   skills: [String],
   portfolio: String,
   profilePicture: String,
+  
+  otp: { 
+    type: String,
+    required: false 
+  },
+  otpExpires: {
+    type: Date,
+    required: false
+  },
+  isVerified: {
+    type: Boolean,
+    default: false
+  },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now }
 });
